@@ -1,0 +1,15 @@
+button {
+    height: 40px;
+    width: 160px;
+    background-color: var(--white-001);
+    border: 2px solid var(--tema-001);
+    border-radius: 4px;
+    color: var(--tema-001);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white-002);
+}

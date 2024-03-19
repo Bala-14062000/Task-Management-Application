@@ -1,0 +1,29 @@
+<section class="content-app">
+    <div class="container-app">
+        <div class="container">
+            <h1 class="title">
+                Edit your task
+            </h1>
+
+            <form #formTask="ngForm"
+                  autocomplete="off">
+
+                <input-text [task]="task"
+                            (onChange)="onChange($event)">
+                </input-text>
+
+                <div class="container-buttons">
+                    <div>
+                        <back-button>
+                        </back-button>
+
+                        <register-button (onClick)="updateTask()"
+                                         [title]="title"
+                                         [disabled]="!(!!task.name && task.name.length > 4)">
+                        </register-button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

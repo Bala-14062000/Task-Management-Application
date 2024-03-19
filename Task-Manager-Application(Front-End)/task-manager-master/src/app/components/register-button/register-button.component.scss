@@ -1,0 +1,20 @@
+button {
+    height: 40px;
+    width: 160px;
+    background-color: var(--tema-001);
+    border: none;
+    border-radius: 4px;
+    color: var(--white-001);
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--tema-002);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: var(--tema-003);
+}

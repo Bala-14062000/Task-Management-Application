@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --font-default: 'Lato', sans-serif;
+    --white-001: rgb(240, 240, 240);
+    --white-002: rgb(230, 230, 230);
+    --yellow: #fecd23;
+    --red-001: #cf0638;
+    --red-002: #eb2d2d;
+    --red-003: #feaec2;
+    --green-001: #3e9b50;
+    --green-002: #85f29b90;
+    --orange: #fa6632;
+    --blue: #1e6495;
+    --tema-001: #38be9a;
+    --tema-002: #49d6b0;
+    --tema-003: #38be9a81;
+    --gray-001: rgb(217, 217, 217);
+    --gray-002: rgb(98, 98, 98);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-default);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

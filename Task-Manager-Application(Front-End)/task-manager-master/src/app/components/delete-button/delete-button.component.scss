@@ -1,0 +1,21 @@
+.container {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--red-002);
+    border-radius: 4px;
+    background-color: var(--red-001);
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: var(--red-002);
+}
+
+.icon {
+    color: var(--white-001);
+    font-size: 16px;
+    height: 16px;
+}

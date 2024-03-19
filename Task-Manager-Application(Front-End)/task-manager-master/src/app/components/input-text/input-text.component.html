@@ -1,0 +1,29 @@
+<div class="container">
+    <label for="name"
+           class="label-name">
+        Name:
+    </label>
+
+    <input type="text"
+           id="name"
+           name="name"
+           [(ngModel)]="task.name"
+           #name="ngModel"
+           minlength="5"
+           maxlength="100"
+           class="input-name"
+           placeholder="{{ placeholder }}"
+           (input)="onChangeValue()"
+           required />
+
+    <div *ngIf="name.errors && (name.dirty || name.touched)"
+         class="alerts">
+        <p [hidden]="!name.errors.required">
+            Enter your task here to neuter her.
+        </p>
+
+        <p [hidden]="!name.errors.minlength">
+            The minimum to register is 5 characters.
+        </p>
+    </div>
+</div>

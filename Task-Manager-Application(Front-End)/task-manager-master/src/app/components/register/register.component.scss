@@ -1,0 +1,55 @@
+@import url("../../app.component.scss");
+
+.title {
+    display: flex;
+    align-items: center;
+    background-color: var(--tema-001);
+    color: var(--white-001);
+    height: 64px;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 24px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: var(--gray-001);
+    margin-top: 4px;
+}
+
+.container-buttons {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-buttons > div {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1040px) {
+    .container-buttons > div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container-buttons > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container-buttons > div {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 96px;
+    }
+}

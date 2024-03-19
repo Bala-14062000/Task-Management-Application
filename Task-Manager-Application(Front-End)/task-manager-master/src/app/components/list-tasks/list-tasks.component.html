@@ -1,0 +1,47 @@
+<section class="content-app">
+    <div class="container-app">
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Actions </th>
+                
+            </tr>
+            <tr *ngFor="let task of tasks">
+                <td [ngClass]="{sucess: task.status}">
+                    {{task.name}}
+                </td>
+
+                <td [ngClass]="{sucess: task.status}">
+                    <checkbox [checked]="task.status"
+                              [id]="task.id"
+                              (click)="onChangeStatus($event)">
+                    </checkbox>
+                </td>
+
+                <td [ngClass]="{sucess: task.status}">
+                    <div class="container-actions">
+                        <edit-button [id]="task.id"></edit-button>
+                        <delete-button [task]="task"
+                                       (click)="deleteTask(task)">
+                        </delete-button>
+                    </div>
+
+                    <div class="mobile-container-actions">
+                        <actions-button [task]="task">
+                        </actions-button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div *ngIf="tasks.length === 0"
+             class="no-tasks">
+            No tasks registered.
+        </div>
+
+        <div class="add-button-container">
+            <add-button></add-button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,82 @@
+.body {
+    position: absolute;
+    z-index: 12;
+    height: 100vh;
+    width: 100%;
+    padding: 120px 16px;
+    background-color: rgba(196, 196, 196, 0.499);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.action {
+    width: 200px;
+    height: 40px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.edit {
+    border-radius: 8px;
+    color: var(--tema-001);
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid var(--tema-001);
+}
+
+.edit:hover {
+    color: var(--white-001);
+    background-color: var(--tema-001);
+}
+
+.danger {
+    border-radius: 8px;
+    color: var(--red-002);
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid var(--red-002);
+}
+
+.danger:hover {
+    color: var(--white-001);
+    background-color: var(--red-002);
+}
+
+.icon {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.closed {
+    display: none;
+}
+
+h3 {
+    font-size: 24px;
+    color: var(--tema-001);
+    margin-bottom: 24px;
+}

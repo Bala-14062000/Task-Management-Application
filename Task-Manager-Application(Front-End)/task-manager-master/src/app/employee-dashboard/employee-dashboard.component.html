@@ -1,0 +1,30 @@
+<!-- employee-dashboard.component.html -->
+
+<div class="container">
+  <h2>Assigned Tasks</h2>
+  <table>
+    <tr>
+      <th>Task Name</th>
+      <th>Description</th>
+      <th>Deadline</th>
+      <th>Status</th>
+      <th>Completion Details</th>
+    </tr>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.name }}</td>
+      <td>{{ task.description }}</td>
+      <td>{{ task.deadline | date }}</td>
+      <td>
+        <select [(ngModel)]="task.status" (change)="updateTaskStatus(task)">
+          <option value="Not Started">Not Started</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </td>
+      <td>
+        <textarea [(ngModel)]="task.completionDetails"></textarea>
+        <button (click)="submitCompletionDetails(task)">Submit</button>
+      </td>
+    </tr>
+  </table>
+</div>

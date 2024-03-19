@@ -1,0 +1,23 @@
+<div class="body"
+     [ngClass]="{'body': isOpen, 'closed': !isOpen}">
+    <div class="container">
+        <h3>
+            Actions
+        </h3>
+
+        <mat-icon class="icon"
+                  (click)="close()">
+            clear
+        </mat-icon>
+
+        <div class="action edit"
+             [routerLink]="['/tasks/edit', task.id]">
+            Edit
+        </div>
+
+        <div class="action danger"
+             (click)="deleteTask()">
+            Delete
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+    <div [ngClass]="{check: checked}"
+         (click)="onClick()">
+        <mat-icon *ngIf="checked"
+                  class="icon">
+            done
+        </mat-icon>
+    </div>
+</div>

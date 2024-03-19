@@ -1,0 +1,8 @@
+<button (click)="onClick()">
+    <mat-icon>more_vert</mat-icon>
+</button>
+
+<actions-mobile [isOpen]="isOpen"
+                [task]="task"
+                (changed)="closed()">
+</actions-mobile>
